@@ -10,7 +10,7 @@ surface watermelon(
  point Pshad = transform("shader",P) * baseColorFreq+label;
  //calcula um simples ruído para dirigir a função spline
  float smallNoise = noise(2 *Pshad);
- //criando variações da color base para passar corretamente para a spline função
+ //criando variações da color base para passar corretamente para a functio spline
  color dargre=  baseColor-0.025;
  color midargre=baseColor-0.0125;
  color midgre=  baseColor;

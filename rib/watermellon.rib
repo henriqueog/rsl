@@ -1,0 +1,19 @@
+#watermellon.rib
+#GSO 6-22-98
+Display "watermellon.tif" "file" "rgb"
+Format 340 300 1
+Projection "perspective" "fov" [30]
+# Translate Camera (moves world origin 6 units towards +Z)
+Translate 0 0 5
+WorldBegin
+  LightSource "ambientlight" 1 "intensity" [0.2]
+  LightSource "distantlight" 2 "intensity" [1.2]"from" [2 4 -6]"to" [0 0 0]
+  # Define a red plastic unit sphere at 0 0 0
+
+   Surface "watermelon"
+  AttributeBegin
+   Rotate 90 0 1 0
+   Scale 1 .8 1
+   Sphere 1 -2 1 360
+  AttributeEnd
+WorldEnd
